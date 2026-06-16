@@ -3,11 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&family=Roboto:wght@100..900&display=swap");
 
 .h2 {
   font-family: "Barlow", sans-serif;
@@ -34,7 +31,6 @@ ol {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-weight: 50px;
   align-items: center;
 }
 
@@ -43,9 +39,7 @@ body header nav li button {
   height: 6vh;
   width: 5vw;
   border-radius: 14px;
-  font-weight: 200;
-  font-style: normal;
-  font-weight: 1000px;
+  font-weight: 1000;
   color: #000;
   font-size: 10px;
 }
@@ -78,10 +72,6 @@ main {
   padding: 100px;
 }
 
-.box {
-  border: none;
-}
-
 .box-2 {
   background-image: url(egg.png);
   background-position: center;
@@ -96,7 +86,6 @@ main {
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat();
 }
 
 .box-5 {
@@ -109,7 +98,7 @@ section {
   font-size: 44px;
   color: #000000dc;
   margin-bottom: 34px;
-  font-weight: 1000px;
+  font-weight: 1000;
 }
 
 .underline-1 {
@@ -128,18 +117,17 @@ section {
   display: flex;
   justify-content: center;
   font-size: 28px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   position: relative;
   top: 120px;
   color: #045004;
-  font-weight: 800px;
+  font-weight: 800;
 }
 
 .paragraph {
   color: #000000a1;
   font-size: 13px;
   margin-bottom: 29px;
-  font-weight: 1000px;
 }
 
 .underline {
@@ -176,14 +164,6 @@ section {
   top: 180px;
 }
 
-.design-2 {
-  color: #0a10819c;
-}
-
-.graphics-2 {
-  color: #070fa0;
-}
-
 .grid-test {
   justify-self: center;
   color: #0000005f;
@@ -194,17 +174,83 @@ section {
 
 .testimonial {
   display: flex;
-  border: 2px solid #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
   height: 250px;
+  width: 300px;
+  margin-bottom: 80px;
 }
 
 .grid-testimonial {
   margin-top: 50px;
-  margin-left: 225px;
+  margin-left: 150px;
 }
 
-.profile {
-  height: 1px;
-  width: 1px;
+.testimonial img {
+  height: 55px;
+  width: 55px;
   border-radius: 200px;
+  margin-bottom: 40px;
+}
+
+.paragh {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 17px;
+}
+
+.market {
+  font-size: 14px;
+  color: #0000009d;
+}
+
+.gallery {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  background: hsl(167, 41%, 57%);
+  width: 98.8vw;
+  height: 60vh;
+}
+
+#footer-services {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 25px;
+  color: hsl(167, 38%, 21%);
+  list-style: none;
+}
+
+.footer-sunnyside {
+  margin-bottom: 50px;
+  color: #215321;
+  font-family: "Barlow", sans-serif;
+  font-weight: 690;
+}
+
+#icon img {
+  padding-right: 12px;
 }
